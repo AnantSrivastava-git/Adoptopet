@@ -1,0 +1,328 @@
+#banner{
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+
+#title{
+    display: inline;
+    font-family:  Helvetica, Arial, sans-serif;
+    color:rgb(23, 7, 13);
+    font-size: x-large;
+    margin-left: 10px ;
+}
+
+#header {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+}
+
+#heading1 {
+    display: inline-block;
+    position: absolute;
+    margin: 15px;
+    font-weight: 650;
+}
+
+#signin {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 85%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: hsla(208, 100%, 50%, 0);
+    color: white;
+    height: 45px;
+    width: 45px;
+}
+
+#signin:hover {
+    background-color: hsl(228, 60%, 45%);
+}
+
+#more {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 92%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: hsla(208, 100%, 50%, 0);
+    color: white;
+    height: 45px;
+    width: 45px;
+}
+
+#more:hover {
+    background-color: hsl(228, 60%, 45%);
+}
+
+navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 15px; 
+}
+
+.headernavbar { 
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    color: black;
+    font-size: large;
+    font-family:  Helvetica, Arial, sans-serif;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 3px solid white;
+    border-radius: 0px;
+}
+
+.headernavbar:hover {
+   cursor: pointer;
+   border-bottom:3px solid rgb(23, 7, 13);
+   color: rgb(23, 7, 13);;
+   /* border-top:3px solid white; */
+}
+
+.navbaricon {
+    position: relative;
+    margin-top: 0px;
+    display: inline-block;
+    padding: 0px 0px;
+    align-items: center;
+    width: 40px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+#hero {
+    margin-left: auto;
+    height: 700px;
+    color: white;
+    display: flex;
+    z-index: -2;
+    justify-content: center;
+    background-color: rgb(23, 7, 13);
+    position: relative;
+    overflow:hidden;
+}
+
+#heroimg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    margin-left: 60% ;
+    margin-top: 10%;
+    border: none;
+    height: auto ;
+    width: auto;
+}
+
+.headeroverlay{
+    position: absolute;
+    margin-left: 319px;
+    z-index: -1;
+    background: linear-gradient(to top,rgba(0,0,0,0.3), rgb(0,0,0,0) );
+    width: 899px;
+    height: 700px;
+}
+
+#herotxt1 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -40%;
+    font-weight: 500;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+#herotxt2 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -40%;
+    text-align: center;
+    font-size: large;
+    height: fit-content;
+}
+
+#vac {
+    border: none;
+    margin-left: -40%;
+    margin-top: 50vh ;
+    border-radius: 50px;
+    height: 30px;
+    z-index:2;
+    scale: 1.5;
+    font-size: 1rem;
+    border: 3px solid white;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 30px ;
+    padding-top: 10px ;
+    padding-right: 10px ;
+    padding-left: 10px ;
+    background-color:rgb(23, 7, 13);
+
+}
+
+@keyframes fade {
+    from{
+    color: white;
+    background-color:rgb(23, 7, 13);
+    }
+    to{
+        background-color:white;
+        color: rgb(23, 7, 13);
+        border: 3px solid white;
+    }
+}
+
+#vac:hover {
+    animation: fade 0.3s ease-in-out;
+    background-color:white;
+    color: rgb(23, 7, 13);
+    border: 3px solid white;
+}
+
+.heronav {
+    display: inline-block;
+    color: rgb(5, 5, 5);
+    border-radius: 5px;
+    margin-top: 8px;
+    width: 30vh;
+    padding: 10px;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.search{
+    /* margin-top:500px ; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search input{
+    border: none;
+    background-color:rgb(155, 122, 31);
+    border-radius:3px;
+    padding: 15px;
+    color: white;
+}
+
+.search input::placeholder{
+    color: white;
+}
+
+.search button{
+    background-color: rgb(155, 122, 31);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-weight: 450;
+    font-family: Verdana;
+    margin-left: 5px;
+}
+
+.search button:hover{
+    background-color: rgb(127, 100, 25);
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 10vh ;
+}
+
+.navigating-card {
+    min-width: 30vh;
+    max-width: 35vh;
+    margin-top: 30vh ;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+}
+
+a{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    color: black;
+    text-decoration:none;
+}
+
+.navigating-card h3{
+    font-size:2rem;
+    font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+}
+
+.location {
+    color: rgb(87, 87, 87);
+}
+
+.arrow{
+    color: rgb(87, 87, 87);
+    font-size: 1.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.big-navigating-card {
+    width: 85%;
+    margin-top: 5vh ;
+    margin-left:10vh ;
+    margin-right:5vh ;
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+}
+
+.big-navigating-card h3{
+    font-size:2rem;
+    font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+}
+
+.txtcontent{
+    display: flex;
+    flex-direction: row;
+    gap:10%;
+}
+
+.big-navigating-card-content{
+    width: 25vh ;
+    color: rgb(87, 87, 87);
+}
+
+.owner{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.owner-img{
+    border-radius: 50%;
+    scale: 0.4;
+}
