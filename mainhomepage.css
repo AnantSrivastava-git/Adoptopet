@@ -112,24 +112,24 @@ body {
 #hero {
     margin-left: auto;
     height: 700px;
-    color: white;
+    color: black;
     display: flex;
     z-index: -2;
     justify-content: center;
-    background-color: rgb(23, 7, 13);
+    background: linear-gradient(to right, hsl(352, 100%, 75%),hsl(351, 55%, 84%),rgb(255, 188, 198),hsl(354, 55%, 84%) );
     position: relative;
     overflow:hidden;
 }
 
 #heroimg {
-    background-size: contain;
+    /* background-size: contain; */
     background-repeat: no-repeat;
     z-index: -1;
     position: absolute;
-    margin-left: 60% ;
-    margin-top: 10%;
+    margin-left: 65% ;
+    margin-top: -10%;
     border: none;
-    height: auto ;
+    height: 1000px ;
     width: auto;
 }
 
@@ -147,7 +147,8 @@ body {
     margin-top: 200px;
     margin-left: -40%;
     font-weight: 500;
-    font-size: xxx-large;
+    font-family: -apple-system;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -162,34 +163,14 @@ body {
 
 #vac {
     border: none;
-    margin-left: -40%;
-    margin-top: 50vh ;
     border-radius: 50px;
     height: 30px;
-    z-index:2;
     scale: 1.5;
     font-size: 1rem;
     border: 3px solid white;
     font-weight: 600;
     color: white;
-    padding-bottom: 30px ;
-    padding-top: 10px ;
-    padding-right: 10px ;
-    padding-left: 10px ;
-    background-color:rgb(23, 7, 13);
-
-}
-
-@keyframes fade {
-    from{
-    color: white;
-    background-color:rgb(23, 7, 13);
-    }
-    to{
-        background-color:white;
-        color: rgb(23, 7, 13);
-        border: 3px solid white;
-    }
+    background: linear-gradient(to right,hsl(351, 55%, 84%),rgb(255, 188, 198),hsl(354, 55%, 84%) );
 }
 
 #vac:hover {
@@ -303,6 +284,16 @@ a{
 .big-navigating-card h3{
     font-size:2rem;
     font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+    margin-left: 5%;
+}
+
+#happytale{
+    margin-left: 8%;
+}
+
+.nested-card{
+    /* background-color: rgb(244, 244, 244); */
+    border-radius: 8px;
 }
 
 .txtcontent{
@@ -314,15 +305,226 @@ a{
 .big-navigating-card-content{
     width: 25vh ;
     color: rgb(87, 87, 87);
+    padding: 15px;
+    margin-bottom: 0px ;
 }
 
 .owner{
     display: flex;
     flex-direction: row;
     gap: 0px;
+    margin-top: 0px ;
+    padding: 15px;
 }
 
 .owner-img{
     border-radius: 50%;
-    scale: 0.4;
+    scale: 0.7;
 }
+
+.quote1{
+    text-align: center;
+    margin-top: 90px;
+    font-family: -apple-system;
+    font-size: 3rem;
+}
+
+.adoption{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* background:linear-gradient(to right, hsl(352, 100%, 75%),rgb(255, 188, 198),hsl(354, 55%, 84%) ); */
+    background-color: #edc0c4;
+}
+
+.pet-card{
+    /* border: solid 3px black; */
+    width: fit-content;
+    border-radius: 20px;
+    margin-left:4.3%;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.pet-img img{
+    border: none;
+    border-radius: 20px;
+    height: 700px;
+    width: 500px;
+    background-size: contain;
+}
+
+.pet-name{
+    font-size: xx-large ;
+    margin-top: 10px;
+}
+
+.pet-desc{
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: larger ;
+}
+
+.pet-age{
+    display: inline;
+    color: rgb(70, 70, 70);
+}
+
+.pet-gender{
+    display: inline;
+    color: rgb(70, 70, 70);
+}
+
+.adoption-anchor{
+    display: block;
+}
+
+#wave{
+    height: 100px;
+    clip-path: curve(60% 100% at 50% 100%);
+    transform:scaleY(-1);
+}
+
+.lost-and-found{
+    /* border: 3px solid black; */
+    height: 490px;
+    margin-left: 10%;
+    width: 730px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.lost-and-found img{
+    background-size: contain;
+    border-radius: 20px ;
+}
+
+.lost-and-found-content{
+    width: fit-content;
+    /* border: 3px solid rgb(218, 218, 218); */
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.lost-and-found p{
+    font-size: x-large;
+    /* border: 3px solid black; */
+    color: gray;
+    width: 200px;
+}
+
+.lost-and-found pre{
+    font-size: large;
+    /* border: 3px solid black; */
+    font-size: x-large;
+    font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+}
+
+#lost-and-found-btn{
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    scale: 1.5;
+    border: 3px solid hsl(351, 55%, 84%);
+    background-color: white;
+    margin-top: 60px;
+    margin-left: 40%;
+    width: 120px;
+    font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+}
+
+@keyframes fade {
+    from{
+    border: 3px solid hsl(351, 55%, 84%);
+    background-color: white;
+    }
+    to{
+        background-color: hsl(351, 55%, 84%),; 
+        color: white;
+        border: 3px solid hsl(351, 55%, 84%);
+    }
+}
+
+#lost-and-found-btn:hover{
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    animation: fade 1s ease-in-out;
+    color: white;
+    border: 3px solid hsl(351, 55%, 84%);
+    background: linear-gradient(to right,hsl(351, 55%, 84%),rgb(255, 188, 198),hsl(354, 55%, 84%) );
+    }
+
+
+
+    .donate{
+        /* border: 3px solid black; */
+        height: 490px;
+        margin-left: 10%;
+        width: 730px;
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+    
+    .donate img{
+        background-size: contain;
+        border-radius: 20px ;
+    }
+    
+    .donate-content{
+        width: fit-content;
+        /* border: 3px solid rgb(218, 218, 218); */
+        padding: 20px;
+        border-radius: 50px;
+    }
+    
+    .donate p{
+        font-size: x-large;
+        /* border: 3px solid black; */
+        color: gray;
+        width: 200px;
+    }
+    
+    .donate pre{
+        font-size: large;
+        /* border: 3px solid black; */
+        font-size: x-large;
+        font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+    }
+    
+    #donate-btn{
+        padding: 15px;
+        border: none;
+        border-radius: 50px;
+        scale: 1.5;
+        border: 3px solid hsl(351, 55%, 84%);
+        background-color: white;
+        margin-top: 60px;
+        margin-left: 40%;
+        width: 120px;
+        font-family:'Lucida Sans',  'Lucida Sans Unicode', Verdana;
+    }
+    
+    @keyframes fade {
+        from{
+        border: 3px solid hsl(351, 55%, 84%);
+        background-color: white;
+        }
+        to{
+            background-color: hsl(351, 55%, 84%),; 
+            color: white;
+            border: 3px solid hsl(351, 55%, 84%);
+        }
+    }
+    
+    #donate-btn:hover{
+        padding: 15px;
+        border: none;
+        border-radius: 50px;
+        animation: fade 1s ease-in-out;
+        color: white;
+        border: 3px solid hsl(351, 55%, 84%);
+        background: linear-gradient(to right,hsl(351, 55%, 84%),rgb(255, 188, 198),hsl(354, 55%, 84%) );
+        }
