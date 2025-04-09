@@ -1,11 +1,6 @@
 body{
     margin: 0px;
-    cursor: url('paw-print copy.png'),auto;
 }
-
-button:hover {
-    cursor: url('paw-print.png'), pointer;
-  }
 
 #banner{
     display: flex;
@@ -79,9 +74,45 @@ navbar{
     font-family: -apple-system;
 }
 
-#menu-button:hover{
+/* #menu-button:hover{
     animation: fade2 0.1s forwards;
-}
+} */
+  
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* hidden */
+    width: 250px;
+    height: 100vh;
+    background-color: #fff0f5;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+  }
+  
+  #sidebar.active {
+    left: 0;
+  }
+  
+  #sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #sidebar nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #c2185b;
+    transition: background 0.2s;
+  }
+  
+  #sidebar nav ul li a:hover {
+    background-color: #ffe4ec;
+    border-radius: 4px;
+  }
+  
 
 .hero{
     /* border: 1px solid black; */

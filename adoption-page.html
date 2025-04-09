@@ -7,6 +7,7 @@
     <title>AdoptoPet-Adoption-Page</title>
     <link rel="stylesheet" href="adoption-page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="adoption-page.js"></script>
 </head>
 
 <body>
@@ -40,7 +41,17 @@
     </div>
     </navbar>
 
-    <button id="menu-button"><i class="material-icons">menu</i></button>
+    <button id="menu-button" aria-label="Toggle Sidebar" aria-expanded="false" onclick="sidebartoggle">☰</button>
+    <aside id="sidebar" aria-hidden="true">
+        <nav>
+          <ul>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">Foster</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Stories</a></li>
+          </ul>
+        </nav>
+      </aside>
 
     <div class="hero">
         <div id="herotxt1">Meet Your New Best Friend Here</div>
