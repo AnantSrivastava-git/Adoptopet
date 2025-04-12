@@ -9,8 +9,14 @@
         <form id="pet guardian">
             <h2>Basic Pet Information</h2>
             
-            <label for="Name"> Name:</label>
-            <input type="text" id="Name" name="Name" >
+            <label for="ownername"> Owner Name:</label>
+            <input type="text" id="ownermame" name="ownerame" >
+
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email" >
+
+            <label for="Pet Name"> Pet Name:</label>
+            <input type="text" id="petname" name="petname" >
             
             <label for="species">Species:</label>
             <input type="text" id="species" name="species" required>
@@ -42,8 +48,8 @@
             <input type="radio" id="yes" name="status" value="yes">
             <label for="no">No</label>
             <input type="radio" id="no" name="status" value="no">
-            <label for="certificate">Certificate</label>
-            <input type="file" name="fileupload" accept="image/*">
+            <!-- <label for="certificate">Certificate</label>
+            <input type="file" name="fileupload" accept="image/*"> -->
             <br>
             <label>Spayed/Neutered:</label>
             <label for="yes">Yes</label>
@@ -51,12 +57,13 @@
             <label for="no">No</label>
             <input type="radio" id="no" name="neutered" value="no">
             <br>
-            <label>Medical History:</label>
+            <!-- <label>Medical History:</label>
             <textarea rows="3" cols="50" name="history">Enter here</textarea>
             <br>
             <label>dietary requirements:</label>
             <textarea rows="3" cols="50" name="diet">Enter here</textarea>
-            <br><hr>
+            <br> -->
+            <hr>
             <h2>Behaviour & Preferences</h2>
             <label>Friendly with Kids:</label>
             <label for="yes">Yes</label>
@@ -76,10 +83,11 @@
             <label for="no">No</label>
             <input type="radio" id="no" name="trained" value="no">
             <br>
-            
+<!--             
             <label>Special Needs?</label>
             <textarea rows="3" cols="50" name="diet">Enter here</textarea>
-            <br><hr>
+            <br> -->
+            <hr>
             <h2>Adoption/Foster Preferences</h2>
             <label>Adoption Preference:</label>
             <label for="permanent">Permanent</label>
@@ -98,6 +106,10 @@
             <textarea rows="3" cols="50" name="adopter preference">Enter here</textarea>
             <br><hr>
             <h2>Location & Contact</h2>
+
+            <label for="phone">Contact Number:</label>
+            <input type="text" id="phone" name="phone">
+            
             <label for="state">State:</label>
             <input type="text" id="state" name="state">
             <br>

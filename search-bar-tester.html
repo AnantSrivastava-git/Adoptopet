@@ -75,9 +75,9 @@
 
     function search(){
         const query = input.value.toLowerCase();
-        data.forEach(name=>{
-            const text = name.textContent.toLowerCase();
-            name.style.display = text.includes(query) ? 'block' : 'none';
+        data.forEach(indx=>{
+            const text = indx.textContent.toLowerCase();
+            indx.style.display = text.includes(query) ? 'block' : 'none';
         });
     };
 </script>
