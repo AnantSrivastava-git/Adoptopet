@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Guardian Registration</title>
+    <link rel="stylesheet" href="owner_pet_info.css">
+</head>
+<body>
+    <div class="page-header">
+        <h1>Pet Guardian Registration</h1>
+    </div>
+
+    <div class="form-container">
+        <form id="pet-guardian" action="owner_pet_info.php" method="post">
+            <h2>Basic Pet Information</h2>
+            
+            <div class="form-row">
+                <div>
+                    <label for="ownername">Owner Name:</label>
+                    <input type="text" id="ownername" name="ownername" placeholder="Your full name">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="petname">Pet Name:</label>
+                    <input type="text" id="petname" name="petname" placeholder="Your pet's name">
+                </div>
+                
+                <div>
+                    <label for="species">Species:</label>
+                    <input type="text" id="species" name="species" required placeholder="Dog, Cat, etc.">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label for="breed">Breed:</label>
+                    <input type="text" id="breed" name="breed" placeholder="Pet's breed">
+                </div>
+                
+                <div>
+                    <label for="petage">Pet Age:</label>
+                    <input type="text" id="petage" name="petage" placeholder="Age in years or months">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div>
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label>Size:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="small" name="size" value="small">
+                        <label for="small">Small</label>
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <label for="medium">Medium</label>
+                        <input type="radio" id="large" name="size" value="large">
+                        <label for="large">Large</label>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <h2>Health And Care Details</h2>
+            
+            <div class="form-row">
+                <div>
+                    <label>Vaccination Status:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes-vacc" name="Vaccination" value="yes">
+                        <label for="yes-vacc">Yes</label>
+                        <input type="radio" id="no-vacc" name="Vaccination" value="no">
+                        <label for="no-vacc">No</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label>Spayed/Neutered:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes-neut" name="neutered" value="yes">
+                        <label for="yes-neut">Yes</label>
+                        <input type="radio" id="no-neut" name="neutered" value="no">
+                        <label for="no-neut">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <h2>Behaviour & Preferences</h2>
+            
+            <div class="form-row">
+                <div>
+                    <label>Friendly with Kids:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes-kids" name="friendly" value="yes">
+                        <label for="yes-kids">Yes</label>
+                        <input type="radio" id="no-kids" name="friendly" value="no">
+                        <label for="no-kids">No</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label>Friendly with Other Pets:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes-pets" name="other-friendly" value="yes">
+                        <label for="yes-pets">Yes</label>
+                        <input type="radio" id="no-pets" name="other-friendly" value="no">
+                        <label for="no-pets">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label>House-Trained:</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes-trained" name="trained" value="yes">
+                    <label for="yes-trained">Yes</label>
+                    <input type="radio" id="no-trained" name="trained" value="no">
+                    <label for="no-trained">No</label>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <h2>Adoption/Foster Preferences</h2>
+            
+            <div class="form-row">
+                <div>
+                    <label>Adoption Preference:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="permanent" name="adoption" value="permanent">
+                        <label for="permanent">Permanent</label>
+                        <input type="radio" id="foster" name="adoption" value="foster">
+                        <label for="foster">Foster</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label>Preferred Adopter Type:</label>
+                    <div class="radio-group">
+                        <label for="previous-pets">Previous Pets?</label>
+                        <input type="radio" id="yes-prev" name="previous-pets" value="yes">
+                        <label for="yes-prev">Yes</label>
+                        <input type="radio" id="no-prev" name="previous-pets" value="no">
+                        <label for="no-prev">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <label for="other-preferences">Other Preferences</label>
+                <textarea rows="3" name="adopter-preference" id="other-preferences" placeholder="Enter any other adopter preferences here"></textarea>
+            </div>
+            
+            <hr>
+            
+            <h2>Location & Contact</h2>
+            
+            <div class="form-row">
+                <div>
+                    <label for="phone">Contact Number:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your contact number">
+                </div>
+                
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" placeholder="Your state">
+                </div>
+            </div>
+            
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Your city">
+            </div>
+            
+            <div>
+                <label for="pet-photos">Photos And Videos Of the Pet:</label>
+                <input type="file" name="fileupload" id="pet-photos" accept="image/*" multiple>
+            </div>
+            
+            <hr>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
