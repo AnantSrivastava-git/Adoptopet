@@ -134,8 +134,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "You weren't registered";
     }
 }
-<<<<<<< HEAD
     ?>
-=======
-    ?>
->>>>>>> 5beef68a9c614fac8852e853d4049d79364801dc
